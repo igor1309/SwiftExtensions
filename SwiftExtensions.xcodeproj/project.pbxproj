@@ -8,12 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		2AD5C50F2303D099004D5DE4 /* SwiftExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AD5C50D2303D099004D5DE4 /* SwiftExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2AD5C5192303D0EC004D5DE4 /* Format+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD5C5152303D0EC004D5DE4 /* Format+Extensions.swift */; };
+		2AD5C51A2303D0EC004D5DE4 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD5C5162303D0EC004D5DE4 /* Color+Extensions.swift */; };
+		2AD5C51B2303D0EC004D5DE4 /* Collection+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD5C5172303D0EC004D5DE4 /* Collection+Extension.swift */; };
+		2AD5C51C2303D0EC004D5DE4 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD5C5182303D0EC004D5DE4 /* Date+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2AD5C50A2303D099004D5DE4 /* SwiftExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AD5C50D2303D099004D5DE4 /* SwiftExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftExtensions.h; sourceTree = "<group>"; };
 		2AD5C50E2303D099004D5DE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2AD5C5152303D0EC004D5DE4 /* Format+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Format+Extensions.swift"; sourceTree = "<group>"; };
+		2AD5C5162303D0EC004D5DE4 /* Color+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
+		2AD5C5172303D0EC004D5DE4 /* Collection+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Collection+Extension.swift"; sourceTree = "<group>"; };
+		2AD5C5182303D0EC004D5DE4 /* Date+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +54,10 @@
 		2AD5C50C2303D099004D5DE4 /* SwiftExtensions */ = {
 			isa = PBXGroup;
 			children = (
+				2AD5C5172303D0EC004D5DE4 /* Collection+Extension.swift */,
+				2AD5C5162303D0EC004D5DE4 /* Color+Extensions.swift */,
+				2AD5C5182303D0EC004D5DE4 /* Date+Extensions.swift */,
+				2AD5C5152303D0EC004D5DE4 /* Format+Extensions.swift */,
 				2AD5C50D2303D099004D5DE4 /* SwiftExtensions.h */,
 				2AD5C50E2303D099004D5DE4 /* Info.plist */,
 			);
@@ -95,6 +107,7 @@
 				TargetAttributes = {
 					2AD5C5092303D099004D5DE4 = {
 						CreatedOnToolsVersion = 11.0;
+						LastSwiftMigration = 1100;
 					};
 				};
 			};
@@ -131,6 +144,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AD5C5192303D0EC004D5DE4 /* Format+Extensions.swift in Sources */,
+				2AD5C51C2303D0EC004D5DE4 /* Date+Extensions.swift in Sources */,
+				2AD5C51B2303D0EC004D5DE4 /* Collection+Extension.swift in Sources */,
+				2AD5C51A2303D0EC004D5DE4 /* Color+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +277,7 @@
 		2AD5C5132303D099004D5DE4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = VRVJ9YNRQU;
@@ -276,6 +294,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.photoigor.SwiftExtensions;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,6 +303,7 @@
 		2AD5C5142303D099004D5DE4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = VRVJ9YNRQU;
